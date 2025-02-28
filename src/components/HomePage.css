@@ -1,0 +1,81 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0); /* Supprimer totalement l'overlay (fond transparent) */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  
+  .logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #0a0a0a;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #111111;
+    max-width: 600px;
+  }
+  .home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .overlay {
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent dark overlay for better text readability */
+    padding: 20px;
+  }
+  
+  .logo {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  h1, p {
+    margin: 10px 0;
+  }
+  .home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0); /* Supprimer totalement l'overlay (fond transparent) */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  
+  .logo {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  h1, p {
+    margin: 10px 0;
+  }
+    
