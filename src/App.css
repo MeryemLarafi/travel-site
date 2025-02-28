@@ -1,0 +1,244 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('https://www.deplacementspros.com/wp-content/uploads/2020/06/business-travel.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: rgba(31, 45, 61, 0.7);
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+  background: #252525;
+  color: white;
+}
+
+/* Destination Section */
+.destination-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
+}
+
+/* Search Bar */
+.search-bar input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Country List */
+.countries-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.country-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.3);
+  transition: 0.3s;
+}
+
+.country-item:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.country-item.selected {
+  background: #007bff;
+  color: white;
+}
+
+.country-flag {
+  width: 40px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+/* City List */
+.cities-section {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+}
+
+.cities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.city-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Button */
+.reserve-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.reserve-btn:hover {
+  background-color: #218838;
+}
+/* Global Styles */
+
+
+/* ReservationForm Styles */
+.reservation-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: calc(100vh - 60px); /* Make space for navbar */
+  padding-top: 20px; /* Bring the form closer to the navbar */
+  background: rgba(0, 0, 0, 0.3); /* Dark overlay to highlight the form */
+  position: relative;
+}
+
+.reservation-box {
+  background: rgba(255, 255, 255, 0.3); /* More transparent background */
+  padding: 40px;
+  border-radius: 15px;
+  width: 500px; /* Wider form */
+  text-align: center;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Title Style */
+.reservation-box h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px; /* Space between title and form */
+}
+
+/* Flex Row for Inputs - Date and Other Inputs on the Same Line */
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Spacing between inputs */
+  margin-bottom: 20px;
+}
+
+.flex-row input,
+.flex-row select {
+  width: 48%; /* Ensure inputs are of equal width and on the same line */
+  padding: 14px; /* Increased padding for better usability */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px; /* Increased font size */
+  background: rgba(255, 255, 255, 0.4); /* Transparent background */
+  transition: 0.3s;
+}
+
+.flex-row input:focus,
+.flex-row select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Date input special styling to match other inputs */
+input[type="date"] {
+  background: rgba(255, 255, 255, 0.4); /* Same transparent background */
+  width: 48%; /* Ensure it matches the width of the other inputs */
+  padding: 24px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Button Styles */
+button {
+  width: 100%;
+  padding: 14px; /* Increased padding for better appearance */
+  background-color: #007bff; /* Blue button color */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px; /* Space between button and inputs */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Media Query for Responsiveness */
+@media screen and (max-width: 600px) {
+  .reservation-box {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .flex-row {
+    flex-direction: column;
+  }
+
+  .flex-row input,
+  .flex-row select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
